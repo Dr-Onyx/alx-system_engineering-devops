@@ -14,8 +14,8 @@ listen load_balancer
 	option httpclose
 	option forwardfor
         balance roundrobin
-	server 148870-web-01 100.26.226.210 check
-	server 148870-web-02 54.84.65.163 check
+	server 148870-web-01 100.26.226.210:80 check
+	server 148870-web-02 54.84.65.163:80 check
 EOF
 
 # Restart haproxy using init script
